@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hot Finds</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="media">
+          <div class="media-body">
+            <h2><b>Recent News</b></h2>
+            <h4 class="media-heading"><b>{{headline}}</b></h4>
+            <h5></p>{{paragraph}}</p></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2><b>Image</b></h2>
+          <img src="{{image_analysisfeatured_image_}}" class="img-responsive">
+      </div>
+
+      <div class="col-md-3">
+        <!-- Row for Mars weather tweet-->
+        <div class="row">
+          <div class="col-md-12">
+              <div class="panel panel-default">
+                  <div class="panel-body">
+                      <h4><b>Weather</b></h4>
+                      <p>{{twitter}}</p>
+                  </div>
+                </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4><b>Facts</b></h4>
+              {{facts}}
+            </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
